@@ -1,0 +1,16 @@
+CREATE TABLE courses (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    price DECIMAL(10, 2) NOT NULL,
+    areas JSON NOT NULL,
+    description VARCHAR(255) NOT NULL
+);
+
+
+INSERT INTO courses (name, price, areas, description)
+VALUES
+('Go Programming Basics', 99.99, '["Programming", "Go", "Basics"]', 'SOME DESCRIPTION'),
+('Advanced Databases', 199.99, '["Databases", "SQL", "Advanced"]', 'SOME DESCRIPTION'),
+('Web Development with React', 149.99, '["Web Development", "React", "JavaScript"]', 'SOME DESCRIPTION'),
+('Machine Learning with Python', 299.99, '["Machine Learning", "Python", "Data Science"]', 'SOME DESCRIPTION'),
+('Introduction to Cloud Computing', 129.99, '["Cloud Computing", "AWS", "Basics"]', 'SOME DESCRIPTION');
